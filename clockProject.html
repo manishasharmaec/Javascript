@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        
+function clock()
+{
+    var d=new Date();
+    var h=d.getHours();
+    var f="AM"
+    if(h>12)
+    {
+        h=h-12;
+    }document.getElementById('f').innerHTML=f;
+    if(h>=12)
+    {
+     f="PM"
+    }document.getElementById('f').innerHTML=f;
+   
+    var m=d.getMinutes();
+    var s=d.getSeconds();
+    document.getElementById('h').innerHTML=h;
+    document.getElementById('m').innerHTML=m;
+    document.getElementById('s').innerHTML=s;
+}
+setInterval(clock,1000)
+    </script>
+    <style>
+     h2
+     {
+        background-color: black;
+        color: aqua;
+     }
+     marquee
+    {
+        color: rebeccapurple;
+        font-size: larger;
+        font-weight:900;
+    }
+     /* h1
+     {
+        text-align: center;
+        color: brown;
+     }
+     */
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <marquee width="40%" direction="right" height="30%">
+        DIGITAL CLOCK
+        </marquee>
+    
+    <h2><span id="h"></span>
+        <span>HH</span>
+        <span id="m"></span>
+        <span>MM</span>
+        <span id="s"></span>
+        <span>SS</span>
+        <span id="f"></span>
+        <span></span>
+    </h2>
+</body>
+</html>
