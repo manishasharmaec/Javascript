@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        function check()
+        {
+            var a=document.getElementById('inputval').value;
+            if(a>='a' & a<='z')
+            {
+                document.write("input value is alphabet");
+            }
+            else
+            {
+                document.write("input value is number");
+            }
+        }
+        
+
+    </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" placeholder="enter any key" name="" id="inputval"><br><br>
+    <input type="button" onclick="check()" value="checknumOrAlpha">
+</body>
+</html>

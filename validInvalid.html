@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+      var username='manisha';
+      var password='12345';
+      function valid()
+      {
+        uname=document.getElementById("username").value;
+        pswd=document.getElementById("password").value;
+        if(username==uname & password==pswd)
+        {
+            document.write("uname & pswd are valid");
+        }
+        else if(username==uname & password!=pswd)
+        {
+            document.write("uname is valid & pswd is not valid");
+        }
+    
+        else if(username!=uname & password==pswd)
+        {
+            document.write("uname is invalid & pswd is valid");
+        }
+        else
+        {
+            document.write("uname&pswd both are invalid");
+        }
+      }
+      
+
+    </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+   username <input type="text" placeholder="username" id="username" ><br><br>
+   password <input type="password" placeholder="paswrd" id="password"><br><br>
+   submit <input type="button" onclick="valid()" value="check">
+   
+
+</body>
+</html>
