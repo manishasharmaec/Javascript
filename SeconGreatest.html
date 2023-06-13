@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a=[150,22,3,4,6,9,110];
+        var greatest=0;
+        var secondgreatest=0;
+        for(var i=0;i<a.length;i++)
+        {
+            if(greatest<a[i])
+            {
+                secondgreatest=greatest;
+                greatest=a[i];
+            }
+            else if(secondgreatest<a[i])
+            {
+                secondgreatest=a[i];
+            }
+           // document.write(greatest+" "+secondgreatest);
+        } document.write(greatest+" "+secondgreatest);
+       
+    </script>
+</body>
+</html>
